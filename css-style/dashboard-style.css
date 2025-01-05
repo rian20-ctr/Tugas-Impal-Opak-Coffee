@@ -1,0 +1,124 @@
+:root{
+    --coffe: rgb(200, 130, 46);
+    --font: rgb(227, 227, 227);
+    --font-secondary: rgb(62, 60, 60);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: poppins,sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Navbar */
+.navbar .navbar-brand{
+    font-family: "Oswald", sans-serif;
+}
+
+.navbar .container .nav-item a{
+    font-size: 20px;
+}
+.navbar .container .nav-item a:hover{
+    color: var(--coffe);
+}
+
+/* All-menu */
+.all-menu a:hover{
+  background-color: white;
+}
+
+/* Recomendasi */
+.recomendasi{
+    margin-top: 1rem;
+}
+.recommend-title, .promotion-title,.minuman-title, .makanan-title{
+    color: var(--font);
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+.recommend-card, .minuman-card, .makanan-card {
+    color: var(--font);
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .recommend-card img, .minuman-card img, .makanan-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .recommend-card{
+    margin-right: 20px;
+  }
+
+  .recommend-card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .recommend-card h5, .makanan-dan-minuman-card h5{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  .makanan-dan-minuman-title, .recommend-title{
+    font-size: 1.7rem;
+  }
+
+  .makanan-dan-minuman-title, .makanan-dan-minuman-card{
+    color: var(--font);
+
+  }
+
+  .makanan-dan-minuman-card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+
+
+  /* footer */
+
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .makanan-dan-minuman-card img, .recommend-card img{
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .makanan-dan-minuman-card img, .recommend-card img{
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 440px) {
+  .makanan-dan-minuman-card img, .recommend-card img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+    body{
+        padding-left:25px;
+        padding-right: 25px;
+    }
+    .promotion{
+        width: 70%;
+    }
+}

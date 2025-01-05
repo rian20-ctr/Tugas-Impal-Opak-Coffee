@@ -1,0 +1,56 @@
+body {
+    font-family: poppins, sans-serif;
+}
+
+.container .content {
+    width: 90%;
+    margin: auto;
+
+}
+.nota-detail h4{
+    font-size: 2.2rem;
+}
+
+.logo-nota {
+    font-size: 150px;
+    text-align: center;
+    color: rgb(200, 130, 46);
+}
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    font-size: 2.5rem;
+}
+
+header p {
+    line-height: 10px;
+}
+
+.info-nota {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(79, 61, 38);
+}
+
+@media (max-width: 576px) {
+    .info-nota{
+        font-size: 0.6rem;
+    }
+    .nota-detail h4{
+        font-size: 1rem;
+    }
+    header h2{
+        font-size: 1.5rem;
+    }
+    header p{
+        font-size: 0.7rem;
+        line-height: 5px;
+    }
+    .logo-nota{
+        font-size: 100px;
+    }
+}

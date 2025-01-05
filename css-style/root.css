@@ -1,0 +1,51 @@
+:root{
+    --coffe: rgb(200, 130, 46);
+    --font: rgb(227, 227, 227);
+    --font-secondary: rgb(62, 60, 60);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: poppins,sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+}
+
+/* Navbar */
+.navbar .navbar-brand{
+    font-family: "Oswald", sans-serif;
+}
+
+.navbar .container .nav-item a{
+    font-size: 20px;
+}
+.navbar .container .nav-item a:hover{
+    color: var(--coffe);
+}
+.navbar .container .nav-item a.active{
+    color: var(--coffe);
+    font-weight: bold;
+}
+.navbar .container .dropdown-menu{
+    background-color: rgba(277, 277, 277, 0.1);
+    border: 2px solid white;
+}
+.navbar .container .dropdown-menu a{
+    color: var(--font);
+}
+
+footer{
+    color: var(--font);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    body{
+        padding-left:25px;
+        padding-right: 25px;
+    }
+}

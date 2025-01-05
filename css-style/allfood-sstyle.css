@@ -1,0 +1,69 @@
+:root{
+    --coffe: rgb(200, 130, 46);
+    --font: rgb(227, 227, 227);
+    --font-secondary: rgb(62, 60, 60);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: poppins,sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    
+}
+
+body main .container{
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--font);
+}
+
+main .table-container table th, main .table-container table td{
+    padding: 10px;
+    font-size: 17px;
+}
+.table-container {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.keranjang{
+    background-color: var(--coffe);
+    padding-left: 8px;
+    width: 340px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    justify-content: center;
+    
+}
+main a{
+    color: var(--font);
+}
+main .table-container table td.image img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+main .table-container table td.data{
+    padding-top: 40px;
+}
+
+@media (max-width:768px) {
+    main .table-container table th, main .table-container table td{
+        font-size: 14px;
+    }
+    main .table-container table td.data{
+        padding-top: 30px;
+    }
+    main .table-container table td.image img{
+        width:70px; 
+        height: 70px;
+    }
+}
+
+
+

@@ -1,0 +1,79 @@
+:root{
+    --coffe: rgb(200, 130, 46);
+    --font: rgb(227, 227, 227);
+    --font-secondary: rgb(62, 60, 60);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: poppins,sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    
+}
+
+body main .container .content, main .container .payment, main .container .detail-payment{
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    background-color: var(--font);
+}
+main .container table{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+} 
+main .container table th,td{
+    padding: 10px;
+}
+main .container .payment .icon, .metode{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+main .container .payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--font);
+    font-size: 1.2rem;
+}
+main .container .payment .icon i{
+    margin-right: 30px;
+}
+main .container .detail-payment .subtotal-food, .total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .container .order-btn button{
+    font-size: 1.2rem;
+    padding: 10px 40px;
+    border-radius: 25px;
+    background-color: var(--coffe);
+}
+main .container .order-btn{
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    main .container .payment{
+        
+        flex-direction: column;
+    }
+}
+@media (max-width: 525px) {
+    main .container .payment{
+        font-size: 1rem;
+    }
+    main .container .table{
+        font-size: 1rem;
+    }
+}
+
+

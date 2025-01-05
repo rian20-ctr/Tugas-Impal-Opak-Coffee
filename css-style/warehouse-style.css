@@ -1,0 +1,42 @@
+:root{
+    --coffe: rgb(200, 130, 46);
+    --font: rgb(227, 227, 227);
+    --font-secondary: rgb(62, 60, 60);
+}
+
+/* table */
+main header{
+    color: var(--font);
+    text-shadow: 2px 2px 2px rgb(62, 60, 60);
+    text-align: center;
+    margin: 2rem 0;
+}
+table tr{
+    color: var(--font);
+}
+.tambah{
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,table td {
+    text-align: center; /* Menjadikan teks di tengah secara horizontal */
+    vertical-align: middle; /* Menjadikan teks di tengah secara vertikal */
+    
+}
+
+table th {
+    background-color: #333; /* Warna latar belakang header tabel */
+    color: white; /* Warna teks header tabel */
+}
+
+table td {
+    background-color: #000; /* Warna latar belakang konten tabel */
+    color: white; /* Warna teks konten tabel */
+}
+
+

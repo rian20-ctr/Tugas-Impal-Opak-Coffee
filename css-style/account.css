@@ -1,0 +1,72 @@
+:root{
+    --coffe: rgb(200, 130, 46);
+    --font: rgb(227, 227, 227);
+    --font-secondary: rgb(62, 60, 60);
+}
+
+main .container .account-content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.image-wrapper img{
+    border-radius: 50%;
+    margin-right: 30px;
+    flex: 30%;
+    
+}
+.account-info{
+    
+    color: var(--font);
+    background-color: rgba(227, 227, 227, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto; /* Tambahkan ini untuk mencegah overflow horizontal */
+    word-wrap: break-word; /
+}
+.account-info table{
+    font-size: 2rem;
+    margin: 20px;
+
+    table-layout: fixed; /* Mengatur lebar kolom agar tetap dalam batas */
+}
+.container .tambah{
+    margin-top: 20px;
+}
+
+
+.account-info table .dot{
+    width: 40px;
+}
+.modal-button button{
+    width: 50px;
+}
+/* Responsif */
+@media (max-width: 992px) {
+    main .container .account-content{
+        flex-direction: column;
+
+    }
+    .image-wrapper img{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .account-info table {
+        font-size: 1.5rem;
+    }
+    .image-wrapper img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+

@@ -1,0 +1,267 @@
+:root{
+    --coffe: rgb(200, 130, 46);
+    --font: rgb(227, 227, 227);
+    --font-secondary: rgb(62, 60, 60);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: poppins,sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+/* Navbar */
+.navbar .navbar-brand{
+    font-family: "Oswald", sans-serif;
+}
+
+.navbar .container .nav-item a{
+    font-size: 20px;
+}
+.navbar .container .nav-item a:hover{
+    color: var(--coffe);
+}
+
+/* Hero Section */
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.hero .col h1{
+    font-size: 5rem;
+}
+.hero .col .typo1{
+    color: var(--font);
+}
+.hero .col .typo2{
+    color: var(--coffe);
+}
+.hero .col{
+    width: 200px;
+}
+.btn-1{
+    background-color: var(--coffe);
+    color: var(--font);
+}
+.btn-2{
+    border-color: var(--coffe);
+    color: var(--coffe);
+}
+
+/* Team Section */
+.team{
+    width: 100%;
+}
+.team h1{
+    margin-top: 20px;
+    color: var(--font-secondary);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 4rem;
+    font-family: "Oswald", sans-serif;
+  }
+  .team-card {
+    color: var(--font-secondary);
+    border-radius: 8px;
+    padding: 1dvh;
+    text-align: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .team-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .team-card h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* About Section */
+  .about{
+    width: 100%;
+  }
+
+  .about .hero-about{
+    opacity: 0.5;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+  .about header h1{
+    z-index: 1;
+    color: var(--font);
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    padding-top: 70px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  .about header p{
+    color: var(--font);
+    text-align: center;
+    padding-inline: 20px;
+  }
+
+  .section-title {
+    color: var(--font);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  .content-section {
+    padding: 60px 20px;
+  }
+  .content-section .deskripsi{
+    color: var(--font);
+    text-align: justify;
+    margin-top: 15px;
+  }
+
+  .offer .offer-title{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--font);
+  }
+
+  .offer-card {
+    
+    color: var(--font);
+    border-radius: 8px;
+    padding: 1dvh;
+    text-align: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .offer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .offer-card h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer{
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Contact */
+  main .container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.image-wrapper img{
+    border-radius: 10%;
+    margin-right: 30px;
+    flex: 30%;
+    
+}
+.about-info{
+    color: var(--font);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.about-info .sosial-media .icon{
+    font-size: 60px;
+    margin-right: 25px;
+}
+.about-info .sosial-media .media{
+    display: flex;
+    flex-direction: row;
+    
+}
+.about-info .sosial-media .media .icon-info{
+    box-sizing: border-box;
+    line-height: 15px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+.about-info .sosial-media .media .icon-info .name-sosmed{
+    color: var(--coffe);
+}
+
+/* Responsif */
+@media (max-width: 778px) {
+    main .container{
+        flex-direction: column;
+
+    }
+    .image-wrapper img{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-wrapper img{
+        width: 70%;
+    }
+}
+
+
+
+
+
+  /* Responsive */
+  /* team */
+  @media (min-width: 992px) {
+    .team{
+        height: 100vh;
+    }
+  }
+  @media (max-width: 576px) {
+    .team-card img {
+      /* max-width: 200px; */
+      margin: 0 auto;
+    }
+    .team-card {
+        max-width: 70%; /* Batasi lebar kartu pada perangkat kecil */
+        padding: 10px; 
+        justify-content: center;
+        margin: auto;
+      }
+  }
+
+  
+
+  /* About */
+  @media (max-width: 576px) {
+    .offer-card img {
+      /* max-width: 200px; */
+      margin: 0 auto;
+    }
+    .offer-card {
+        max-width: 70%; /* Batasi lebar kartu pada perangkat kecil */
+        padding: 10px; 
+        justify-content: center;
+        margin: auto;
+      }
+  }
+    
