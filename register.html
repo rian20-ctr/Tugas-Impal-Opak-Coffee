@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(Asset/background/dark_wood.png);
+        }
+    </style>
+</head>
+<body>
+    <section class="h-100">
+        <div class="container h-100">
+            <div class="row justify-content-sm-center h-100">
+                <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+                    <div class="text-center my-5">
+                        <img src="Asset/icon/coffi-start.jpg" class="rounded" alt="logo" width="170">
+                    </div>
+                    <div class="card shadow-lg">
+                        <div class="card-body p-5">
+                            <h1 class="fs-4 card-title fw-bold mb-4">Register</h1>
+                            <form id="registerForm" method="POST" action="./registrasi.php" enctype="multipart/form-data" onsubmit="return validateForm()">
+                                <div class="mb-3">
+                                    <label class="mb-2 text-muted" for="name">Name</label>
+                                    <input id="name" type="text" class="form-control" name="nama_admin" required autofocus>
+                                    <div class="invalid-feedback">
+                                        Name is required    
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2 text-muted" for="alamat">Address</label>
+                                    <input id="alamat" type="text" class="form-control" name="alamat" required>
+                                    <div class="invalid-feedback">
+                                        Address is required
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2 text-muted" for="email">E-Mail Address</label>
+                                    <input id="email" type="email" class="form-control" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Email is invalid
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2 text-muted" for="password">Password</label>
+                                    <input id="password" type="password" class="form-control" name="password" required>
+                                    <div class="invalid-feedback">
+                                        Password is required
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2 text-muted" for="confirmPassword">Repeat Your Password</label>
+                                    <input id="confirmPassword" type="password" class="form-control" name="confirmPassword" required>
+                                    <div class="invalid-feedback">
+                                        Passwords do not match
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2 text-muted" for="image">Upload Profile Picture</label>
+                                    <input id="image" type="file" class="form-control" name="image" accept="image/*">
+                                    <div class="form-text">
+                                        Supported formats: JPG, PNG. Max size: 2MB.
+                                    </div>
+                                </div>
+                                <p class="form-text text-muted mb-3">
+                                    By registering you agree with our terms and conditions.
+                                </p>
+                                <div class="d-flex justify-content-sm-center">
+                                    <button type="submit" class="btn" style="background-color: #8B4513; border-color: #8B4513; color: white;">
+                                        Register    
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer py-3 border-0">
+                            <div class="text-center">
+                                Already have an account? <a href="index.html" class="text-dark">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5 text-muted">
+                        Copyright &copy; 2024 &mdash; Opak Coffee
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/Validasi.js"></script>
+
+</body>
+</html>
